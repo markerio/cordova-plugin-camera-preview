@@ -6,7 +6,7 @@
 
 #define TMP_IMAGE_PREFIX @"cpcp_capture_"
 
-@implementation CameraPreview
+@implementation CameraPreview 
 
 -(void) pluginInitialize{
   // start as transparent
