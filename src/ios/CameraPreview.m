@@ -9,7 +9,7 @@
 @implementation CameraPreview 
 
 -(void) pluginInitialize{
-  // start as transparent
+  // start this as transparent
   self.webView.opaque = NO;
   self.webView.backgroundColor = [UIColor clearColor];
 }
