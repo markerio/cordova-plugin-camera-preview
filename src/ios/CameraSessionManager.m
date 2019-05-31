@@ -699,13 +699,13 @@
   [AVCaptureDevice requestAccessForMediaType:mediaType completionHandler:^(BOOL granted) {
     if (!granted) {
       //Not granted access to mediaType
-      dispatch_async(dispatch_get_main_queue(), ^{
-          [[[UIAlertView alloc] initWithTitle:@"Tapshare"
-                                      message:@"Access to camera has been prohibited; please enable it in the Settings app to continue."
-                                     delegate:self
-                            cancelButtonTitle:@"OK"
-                            otherButtonTitles:nil] show];
-      });
+      //dispatch_async(dispatch_get_main_queue(), ^{
+      //    [[[UIAlertView alloc] initWithTitle:@"Tapshare"
+      //                                message:@"Access to camera has been prohibited; please enable it in the Settings app to continue."
+      //                               delegate:self
+      //                      cancelButtonTitle:@"OK"
+      //                      otherButtonTitles:nil] show];
+      //});
     }
   }];
 }
